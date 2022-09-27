@@ -5,35 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icono4.jpg" type="image/x-icon" />
+    <!-- link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>DONACIÓN</title>
   </head>
   <body>
     <header>
-      <div class="menu">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="img/icono4.jpg" alt="Es un logo."
-          /></a>
+      <nav class="navbar navbar-expand-lg bg-transparent navbar-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/icono4.jpg" alt="Icon" />
+          </a>
+          <button
+            class="navbar-toggler navbar-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-style" id="navbarNav">
+            <ul class="navbar-nav nav-list">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-text"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="adoptar.html">Adoptar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="donar.html">Donar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="mascotas-perdidas.html"
+                  >Mascotas Perdidas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a class="enlaces" href="index.html">Inicio</a></li>
-            <li><a class="enlaces" href="adoptar.html">Adoptar</a></li>
-            <li><a class="enlaces" href="donar.html">Donar</a></li>
-            <li><a class="enlaces" href="mascotas-perdidas.html">Mascotas Perdidas</a></li>
-            <li><a class="enlaces" href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
       <div class="textos">
         <h1 class="texto">DONACIÓN</h1>
       </div>
     </header>
     <main class="contenido">
       <section class="datos-donacion">
-        <form action="">
-          <div class="Nombres">
+        <form class="formulario-donar" action="">
+          <div class="nombres">
             <label for="nombre-apellido">Nombre y Apellido:</label>
             <input
               class="datos-formulario-donar"
@@ -57,7 +92,7 @@
               placeholder="Teléfono"
             />
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta-donar">
             <label for="tarjeta">N° de tarjeta:</label>
             <input
               class="datos-formulario-donar"
@@ -72,14 +107,14 @@
               type="number"
               placeholder="Cantidad"
             />
-          </div>
-          <div class="boton-main">
-            <button class="boton">Enviar</button>
-          </div>
         </form>
+      </div>
+      <div class="boton-main">
+        <button class="boton">Enviar</button>
+      </div>
       </section>
       <p class="texto-main">
-        Al donar nos estás ayudando a darles comodidad,comida,ropita,algunos
+        Al donar nos estás ayudando a darles comodidad, comida,ropita,algunos
         juguetes y los mas importante ayudas al tratamiento de algunas mascotas
         que llegan heridas y sin sus vacunas.Muchas gracias por apoyarnos.
       </p>
@@ -135,4 +170,10 @@
       </div>
     </footer>
   </body>
+  <!--link bootstrap js-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
 </html>
