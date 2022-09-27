@@ -163,6 +163,8 @@ ul li a img {
 .mascotas{
   display: flex;
   justify-content: space-evenly;
+  padding-top: 30px;
+  padding-right: 60px;
 }
 .lista-mascotas{
   width: 100%;
@@ -170,7 +172,6 @@ ul li a img {
   justify-content: start;
   gap: 20px;
   flex-wrap: wrap;
-  padding-top: 30px ;
   padding-left: 30px;
 
 }
