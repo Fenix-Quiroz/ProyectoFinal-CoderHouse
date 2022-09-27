@@ -87,11 +87,11 @@ img {
   padding-bottom: 20px;
 }
 .imagenes-main {
-  border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 250px;
   height: 250px;
-  box-shadow: 10px 10px 10px;
+  box-shadow: 10px 10px 20px;
 }
 
 .parrafos-inicio {
@@ -184,7 +184,7 @@ ul li a img {
   border-radius: 10px;
   background-color: white;
   border: 1px solid rgb(56, 55, 55);
-  box-shadow: 10px 10px 10px;
+  box-shadow: 10px 10px 20px;
 }
 .tarjeta-img{
   height: 225px;
