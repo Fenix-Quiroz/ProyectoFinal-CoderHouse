@@ -12,277 +12,307 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <!--Modificocion de estilos bootstrap-->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <!--link del css-->
     <link rel="stylesheet" href="style.css" />
+    <!--link liibreria AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>ADOPTAR</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-transparent navbar-white">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/icono4.jpg" alt="Icon" />
-          </a>
-          <button
-            class="navbar-toggler navbar-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse navbar-style" id="navbarNav">
-            <ul class="navbar-nav nav-list">
-              <li class="nav-item">
-                <a
-                  class="nav-link nav-text"
-                  aria-current="page"
-                  href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-text" href="adoptar.html">Adoptar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-text" href="donar.html">Donar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-text" href="mascotas-perdidas.html"
-                  >Mascotas Perdidas</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-text" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <div class="root">
+      <div class="banner">
+        <header>
+          <nav class="navbar navbar-expand-lg bg-transparent navbar-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/icono4.jpg" alt="Icon" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="adoptar.html">Adoptar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="donar.html">Donar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mascotas-perdidas.html"
+                      >Mascotas Perdidas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="introduction">
+          <h1 class="introduction__title">Adopta a tu nuevo mejor amigo.</h1>
         </div>
-      </nav>
-      <div class="textos">
-        <h1 class="texto">Adopta a tu nuevo mejor amigo.</h1>
       </div>
-    </header>
-    <main class="contenido">
-      <p class="texto-main">
-        Adoptar una mascota es darle un hogar y felicidad después de estar
-        perdidos y tristes. <br />
-        <span class="lema">¡NO COMPRES UNO DE RAZA,ADOPTA UNO SIN CASA!</span>
-      </p>
 
-      <div class="mascotas">
-        <section class="lista-mascotas">
-          <div class="tarjeta"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/pelusa.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Pelusa</h5>
-              <p class="tarjeta-info-descripcion">
-                Pelusa es una perrita muy juguetona, puede ser engreida en algunas
-                ocasiones,pero es muy divertida.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/boby.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Boby</h5>
-              <p class="tarjeta-info-descripcion">
-                Boby es un gatito muy jugueton, puede ser engreido en algunas
-                ocasiones,pero es muy divertido.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/boky.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Boky</h5>
-              <p class="tarjeta-info-descripcion">
-                Boky es un perrito muy jugueton, puede ser engreido en algunas
-                ocasiones,pero es muy divertido.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/lisa.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Lisa</h5>
-              <p class="tarjeta-info-descripcion">
-                Lisa es una gatita muy juguetona, puede ser engreida en algunas
-                ocasiones,pero es muy divertida.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/toby.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Toby</h5>
-              <p class="tarjeta-info-descripcion">
-                Toby es un perrito muy jugueton, puede ser engreido en algunas
-                ocasiones,pero es muy divertido.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/garfield.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Garfield</h5>
-              <p class="tarjeta-info-descripcion">
-                Garfield es un gatito muy jugueton, puede ser engreido en algunas
-                ocasiones,pero es muy divertido.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/rey.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Rey</h5>
-              <p class="tarjeta-info-descripcion">
-                Rey es un perrito muy jugueton, puede ser engreido en algunas
-                ocasiones,pero es muy divertido.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/rous.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Rous</h5>
-              <p class="tarjeta-info-descripcion">
-                Rous es una perrita muy juguetona, puede ser engreida en algunas
-                ocasiones,pero es muy divertida.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-          <div class="tarjeta" data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-            <img
-              class="tarjeta-img"
-              src="img/peluchin.jpg"
-              alt="Imagen de un gato"
-            />
-            <div class="tarjeta-info">
-              <h5 class="tarjeta-info-nombre">Peluchin</h5>
-              <p class="tarjeta-info-descripcion">
-                Peluchin es un perrito muy jugueton, puede ser engreido en algunas
-                ocasiones,pero es muy divertido.
-              </p>
-              <a href="contacto.html" class="tarjeta-boton">ADOPTAR</a>
-            </div>
-          </div>
-        </section>
-        <br />
+      <main class="main">
+        <p class="main__text">
+          Adoptar una mascota es darle un hogar y felicidad después de estar
+          perdidos y tristes. <br />
+          <span class="lema">¡NO COMPRES UNO DE RAZA,ADOPTA UNO SIN CASA!</span>
+        </p>
 
-        <section class="filtro">
-          <div class="titulo-filtro">
-            <h4>Filtro</h4>
-          </div>
-          <div class="clases">
-            <form action="">
-              <p>clases:</p>
-              <div class="perros">
-                <input type="checkbox" />
-                <label for="perros">Perros</label>
+        <div class="pets-cards">
+          <section class="pets-cards__adoption">
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/pelusa.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Pelusa</h5>
+                <p class="card-information__description">
+                  Pelusa es una perrita muy juguetona, puede ser engreida en
+                  algunas ocasiones,pero es muy divertida.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-              <div class="gatos">
-                <input type="checkbox" />
-                <label for="gatos">Gatos</label>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/boby.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Boby</h5>
+                <p class="card-information__description">
+                  Boby es un gatito muy jugueton, puede ser engreido en algunas
+                  ocasiones,pero es muy divertido.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-              <p>Sexo:</p>
-              <div class="hembra">
-                <input type="checkbox" />
-                <label for="hembra">hembra</label>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/boky.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Boky</h5>
+                <p class="card-information__description">
+                  Boky es un perrito muy jugueton, puede ser engreido en algunas
+                  ocasiones,pero es muy divertido.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-              <div class="macho">
-                <input type="checkbox" />
-                <label for="macho">Macho</label>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/lisa.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Lisa</h5>
+                <p class="card-information__description">
+                  Lisa es una gatita muy juguetona, puede ser engreida en
+                  algunas ocasiones,pero es muy divertida.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-              <p>Tamaño:</p>
-              <div class="pequeños">
-                <input type="checkbox" />
-                <label for="pequeños">Pequeños</label>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/toby.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Toby</h5>
+                <p class="card-information__description">
+                  Toby es un perrito muy jugueton, puede ser engreido en algunas
+                  ocasiones,pero es muy divertido.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-              <div class="medianos">
-                <input type="checkbox" />
-                <label for="medianos">Medianos</label>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/garfield.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Garfield</h5>
+                <p class="card-information__description">
+                  Garfield es un gatito muy jugueton, puede ser engreido en
+                  algunas ocasiones,pero es muy divertido.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-              <div class="grandes">
-                <input type="checkbox" />
-                <label for="grandes">Grandes</label>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/rey.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Rey</h5>
+                <p class="card-information__description">
+                  Rey es un perrito muy jugueton, puede ser engreido en algunas
+                  ocasiones,pero es muy divertido.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
               </div>
-            </form>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="logo">
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/rous.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Rous</h5>
+                <p class="card-information__description">
+                  Rous es una perrita muy juguetona, puede ser engreida en
+                  algunas ocasiones,pero es muy divertida.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
+              </div>
+            </div>
+            <div
+              class="pet-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pet-card__img"
+                src="img/peluchin.jpg"
+                alt="Imagen de un gato"
+              />
+              <div class="card-information">
+                <h5 class="card-information__name">Peluchin</h5>
+                <p class="card-information__description">
+                  Peluchin es un perrito muy jugueton, puede ser engreido en
+                  algunas ocasiones,pero es muy divertido.
+                </p>
+                <a href="contacto.html" class="pet-card__button">ADOPTAR</a>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <section class="filter">
+            <div class="filter__title">
+              <h4>Filtro</h4>
+            </div>
+            <div class="filter__data">
+              <form action="">
+                <p>clases:</p>
+                <div>
+                  <input type="checkbox" />
+                  <label for="perros">Perros</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for="gatos">Gatos</label>
+                </div>
+                <p>Sexo:</p>
+                <div>
+                  <input type="checkbox" />
+                  <label for="hembra">hembra</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for="macho">Macho</label>
+                </div>
+                <p>Tamaño:</p>
+                <div>
+                  <input type="checkbox" />
+                  <label for="pequeños">Pequeños</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for="medianos">Medianos</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for="grandes">Grandes</label>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div>
           <a href="index.html"
             ><img class="logo" src="img/icono4.jpg" alt="Es un logo."
           /></a>
         </div>
-        <div class="ubicacion">
-          <p class="texto-footer">Ubicanos en:</p>
+        <div class="footer__location">
+          <p class="footer-text">Ubicanos en:</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31206.90996320073!2d-77.04629307031205!3d-12.121473891679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8199ea33425%3A0xbfe3626e9c3a156a!2sMiraflores!5e0!3m2!1ses-419!2spe!4v1661733252771!5m2!1ses-419!2spe"
             width="600"
@@ -293,12 +323,12 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="redes">
-          <p class="texto-footer">Nuestras Redes:</p>
-          <ul class="lista-redes">
+        <div class="footer-networks">
+          <p class="footer-text">Nuestras Redes:</p>
+          <ul class="footer-networks__list">
             <li>
               <a
-                class="logo-redes"
+                class="network"
                 href="https://www.instagram.com/"
                 target="_blank"
                 ><img src="img/instagram.png" alt="Instagram"
@@ -306,24 +336,21 @@
             </li>
             <li>
               <a
-                class="logo-redes"
+                class="network"
                 href="https://www.facebook.com/"
                 target="_blank"
                 ><img src="img/facebook.png" alt="Facebook"
               /></a>
             </li>
             <li>
-              <a
-                class="logo-redes"
-                href="https://www.twitter.com/"
-                target="_blank"
+              <a class="network" href="https://www.twitter.com/" target="_blank"
                 ><img src="img/twitter.png" alt="Twitter"
               /></a>
             </li>
           </ul>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <!--link bootstrap js-->
   <script

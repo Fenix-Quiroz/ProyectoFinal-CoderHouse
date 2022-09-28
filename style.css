@@ -9,7 +9,7 @@ body {
 
 /*estilos del header -index*/
 
-header {
+.banner{
   background-image: url(img/fondo2.jpg);
   height: 400px;
 }
@@ -27,31 +27,12 @@ img {
   transform: scale(1.2);
   transition: transform 0.3s;
 }
-.navbar-button {
-  background-color: gray;
+.introduction, h1, p{
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
 }
-.navbar-style {
-  justify-content: end;
-  font-weight: 40px;
-}
-.nav-list {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 0 15px;
-  border-radius: 12px;
-}
-
-.nav-text {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 0.2em;
-}
-.nav-text:hover {
-  color: blueviolet;
-  transition: 1.2s;
-}
-
-.textos {
+.introduction {
   background-color: rgba(255, 255, 255, 0.5);
   width: 500px;
   padding: 10px 10px;
@@ -61,64 +42,56 @@ img {
   font-size: 20px;
   font-weight: bold;
 }
-.texto{
+.introduction__title{
   text-align: center;
-  align-items: center;
   font-weight: bold;
   font-size: 2em;
+  
 }
+
 
 /*fin estilos del header-index*/
 /*Estilos del main-index*/
 
-.contenido {
+.main{
   padding-bottom: 30px;
   background-image: linear-gradient(to left, skyblue, blueviolet);
   color: black;
 }
 
-.texto-main {
+.main__title , .main__text{
   padding-top: 20px;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   margin: auto;
   width: 80%;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
-.imagenes-main {
+
+.experience-card{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+.experience-card--reverse{
+  flex-direction: row-reverse;
+}
+.experience-card__img{
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 250px;
   height: 250px;
   box-shadow: 10px 10px 20px;
 }
-
-.parrafos-inicio {
+.experience-card__text{
   display: flex;
   align-items: center;
   width: 300px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
-
-.caso1 {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.caso2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-}
-
-.caso3 {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 /* fin de estilos del main--index*/
 /*Estilos del footer-index*/
 
@@ -129,24 +102,29 @@ img {
   padding-top: 25px;
   font-size: 2em;
 }
+.footer-text{
+  display: flex;
+  justify-content: center;
+}
 
-iframe {
+.footer__location iframe {
   width: 600px;
   height: 150px;
 }
-ul {
+.footer-networks ul {
   list-style: none;
 }
-.lista-redes {
+.footer-networks__list{
   display: flex;
   justify-content: space-around;
-  margin-top: 2em;
+  margin-top: 1.9em;
+  padding-left: 0;
 }
 
-ul li a img {
+.network img {
   width: 40px;
 }
-.redes img:hover {
+.network img:hover {
   transform: scale(1.5);
   transition: transform 0.5s;
 }
@@ -160,13 +138,12 @@ ul li a img {
   border-radius: 5px;
   padding: 0 10px;
 }
-.mascotas{
+.pets-cards{
   display: flex;
   justify-content: space-evenly;
   padding-top: 30px;
-  padding-right: 60px;
 }
-.lista-mascotas{
+.pets-cards__adoption{
   width: 100%;
   display: flex;
   justify-content: start;
@@ -175,37 +152,37 @@ ul li a img {
   padding-left: 30px;
 
 }
-.tarjeta , .tarjeta-img{
+.pet-card , .pet-card__img{
   width: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.tarjeta{
+.pet-card{
   border-radius: 10px;
   background-color: white;
   border: 1px solid rgb(56, 55, 55);
   box-shadow: 10px 10px 20px;
 }
-.tarjeta-img{
+.pet-card__img{
   height: 225px;
 }
-.tarjeta-info{
+.card-information{
   padding: 15px;
 }
-.tarjeta-info-nombre{
+.card-information__name{
   text-align: center;
   padding-bottom: 20px;
   font-weight: bold;
   font-size: 25px;
   color: blue;
 }
-.tarjeta-info-descripcion{
+.card-information__description{
   text-align: center;
   font-weight: bold;
   font-size: 18px;
 
 }
-.tarjeta-boton{
+.pet-card__button{
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -217,27 +194,28 @@ ul li a img {
   border-radius: 10px;
   margin-top: 1em;
 }
-.tarjeta-boton:hover{
+.pet-card__button:hover{
   background-color: rgb(6, 6, 110);
   transition: 0.5s;
   color: white;
 }
 
-.filtro {
+.filter{
   background-image: linear-gradient(to top, white, skyblue);
   display: block;
-  border-radius: 30px;
+  border-radius: 20px;
   width: 200px;
   height: 400px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   box-shadow: 10px 20px 20px;
+  margin-right: 60px;
 }
-.titulo-filtro {
+.filter__title{
   display: flex;
   justify-content: center;
 }
-.clases {
+.filter__data{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,23 +225,8 @@ ul li a img {
 
 /*estilos del main -donar*/
 
-.datos-donacion {
-  font-size: 30px;
-  font-weight: bold;
-  flex-flow: column;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.datos-formulario-donar {
-  background-color: transparent;
-  width: 100%;
-  font-size: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-.formulario-donar{
+
+.donate-form__data{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -272,20 +235,36 @@ ul li a img {
   font-weight: bold;
   padding: 20px;
 }
+.donate-form__data__item{
+  padding: 0 150px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.input-donation{
+  background-color: transparent;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
 
-
-.boton-main {
+.button{
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
-
-.boton {
+.button__text:hover{
+  background-color: black;
+  color: skyblue;
+  transition: .5s;
+}
+.button__text{
   font-size: 20px;
   font-weight: bold;
   padding: 5px 10px;
-  background-color: black;
-  color: skyblue;
+  background-color: transparent;
+  color: black;
   border-radius: 5px;
 }
 
@@ -293,12 +272,12 @@ ul li a img {
 
 /*estilos del main-mascotas perdidaa*/
 
-.lista-mascotas-perdidas {
+.lost-pets-cards{
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
   padding: 30px 0;
  
 }
@@ -307,7 +286,7 @@ ul li a img {
 
 /*inicio estilos de main-contacto*/
 
-.datos-contacto {
+.contact-form{
   margin: auto;
   background-color: transparent;
   width: 700px;
@@ -315,7 +294,7 @@ ul li a img {
   border-radius: 10px;
   box-shadow: 10px 10px 20px black;
 }
-.datos {
+.input-contact{
   background-image: linear-gradient(to right, blueviolet, rgb(56, 56, 56));
   border-radius: 10px;
   width: 100%;
@@ -324,14 +303,11 @@ ul li a img {
   font-size: 25px;
 }
 
-.datos::placeholder {
-  font-family: cursive;
-}
 
 /*fin de estilos-contacto*/
 /* VERSION MOBILE-INDEX-*/
 @media only screen and (max-width: 576px) {
-  header {
+  .banner{
     background-image: url(img/fondo-mobile.jpg);
     width: 100%;
     height: auto;
@@ -343,85 +319,60 @@ ul li a img {
     height: 60px;
   }
  
-  .textos {
-    background-color: rgba(255, 255, 255, 0.5);
+  .introduction{
     width: 100%;
-    padding: 10px 10px;
     margin-left: 0px;
-    border-radius: 15px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
   }
 
-  .texto-main {
-    text-align: center;
+
+  /*MAIN-MOBILE*/
+ 
+  .main__title{
     padding: 20px;
     font-size: 15px;
-    font-weight: bold;
     width: 100%;
   }
-  /*MAIN-MOBILE*/
-  
-
-  .imagenes-main {
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    width: 100%;
-    height: 300px;
-    box-shadow: 10px 10px 10px;
-  }
-  .parrafos-inicio {
-    width: 100%;
-    margin: auto;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 20px 0;
-  }
-
-  .caso1 , .caso2 , .caso3{
+  .experience-card{
     padding: 10px 50px;
     display: block;
   }
+  
+
+  .experience-card__img{
+    width: 100%;
+  }
+  .experience-card__text{
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px 0;
+  }
+
+  
 
   /*footer-mobile*/
   .footer {
-    background-color: skyblue;
     display: block;
     justify-content: flex-end;
     padding: 15px 0;
     font-size: large;
   }
-  .texto-footer {
-    display: flex;
-    justify-content: center;
-  }
-  iframe {
+  
+  .footer__location iframe{
     padding: 1em;
     width: 100%;
     height: auto;
   }
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-  }
-  ul li a img {
-    width: 50px;
-  }
   /*donar mobile*/
-  .formulario-donar{
+  .donate-form__data{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 20px;
+
+  }
+  .donate-form__data__item{
+    padding: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 }
