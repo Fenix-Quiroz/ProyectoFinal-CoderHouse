@@ -1,0 +1,37 @@
+/*Main-index*/
+.main {
+  background-image: linear-gradient(to left, skyblue, blueviolet);
+  color: nth($colores, 1);
+  padding-bottom: 25px;
+  &__title,
+  &__text {
+    text-align: center;
+    font-size: nth($font-size, 4);
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    padding: 20px 0;
+  }
+  .experience-card {
+    @include display-flex(flex, space-evenly);
+    padding: 30px 0;
+    &--reverse {
+        flex-direction: row-reverse;
+      }
+      &__img {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 250px;
+        height: 250px;
+        box-shadow: 10px 10px 20px;
+      }
+      &__text {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        font-size: nth($font-size, 3);
+        font-weight: bold;
+      }
+  }
+}
+

@@ -1,0 +1,126 @@
+/*Vesion Mobile*/
+/*Header*/
+@media only screen and (max-width: 576px) {
+  .banner {
+    background-image: url(../img/fondo-mobile.jpg);
+    width: 100%;
+    height: auto;
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+    .introduction {
+      width: 100%;
+      margin-left: 0px;
+      border-radius: 10px;
+    }
+  }
+
+  /*Footer Mobile*/
+  .footer {
+    @include display-flex(block, flex-end);
+    padding: 15px 0;
+    font-size: large;
+    .logo {
+      margin: auto;
+      width: 60px;
+      height: 60px;
+    }
+    .footer__location iframe {
+      padding: 1em;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /*Main-index*/
+  .main {
+    &__title,
+    &__text {
+      font-size: nth($font-size, 2);
+      width: 100%;
+    }
+    &__text {
+      padding: 25px;
+    }
+
+    .experience-card {
+      padding: 10px 50px;
+      display: block;
+      &__img {
+        width: 100%;
+      }
+
+      &__text {
+        width: 100%;
+        margin: auto;
+        font-size: 15px;
+        padding: 20px 0;
+      }
+    }
+  }
+
+  /*Main adoptar*/
+
+  .lema {
+    font-size: nth($font-size, 2);
+    border-radius: 0px;
+  }
+  .main__adoption {
+    width: 100%;
+    flex-direction: column-reverse;
+    @include display-flex(flex, center);
+    padding: 0;
+  }
+  .pets-cards__adoption {
+    @include display-flex(flex, center);
+    padding-left: 0px;
+    padding: 30px;
+  }
+  .pet-card,
+  .pet-card__img {
+    width: 100%;
+  }
+  .section-filter {
+    padding: 30px;
+  }
+  .filter-form {
+    @include display-flex(flex, space-between);
+  }
+
+  .filter {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0;
+    &__data {
+      display: block;
+      padding: 15px;
+    }
+  }
+
+  /*Main-donar*/
+  .donate-form__data {
+    display: grid;
+    grid-template-columns: 1fr;
+    &__item {
+      padding: 0px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+  }
+  /*Main-mascotas perdidas*/
+  .lost-pets-cards {
+    padding: 30px;
+  }
+  /*Main-contacto*/
+  .contact-form {
+    margin: auto;
+    background-color: transparent;
+    width: 350px;
+    padding: 0;
+    border-radius: none;
+    box-shadow: none;
+  }
+}

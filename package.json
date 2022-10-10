@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Fenix Quiroz</h1>\r <h3 align=\"left\">Connect with me:</h3>\r <p align=\"left\">\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fenix-Quiroz/PreEntrega2-FenixQuiroz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fenix-Quiroz/PreEntrega2-FenixQuiroz/issues"
+  },
+  "homepage": "https://github.com/Fenix-Quiroz/PreEntrega2-FenixQuiroz#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

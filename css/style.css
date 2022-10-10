@@ -1,0 +1,449 @@
+/*Reseteo general*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+/*Header*/
+.banner {
+  background-image: url(../img/fondo2.jpg);
+  height: 400px;
+}
+.banner .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.banner .logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+.banner .navbar-toggler {
+  background-color: gray;
+}
+.banner .navbar-collapse {
+  justify-content: end;
+  font-weight: 40px;
+}
+.banner .navbar-nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 15px;
+  border-radius: 12px;
+}
+.banner .nav-link {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0.2em;
+}
+.banner .nav-link:hover {
+  color: blueviolet;
+  transition: 1s;
+  text-decoration: underline;
+}
+.banner .introduction,
+.banner h1,
+.banner p {
+  padding: 10px;
+  margin: 0;
+  line-height: 1.3;
+}
+.banner .introduction {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 500px;
+  padding: 10px 10px;
+  margin-left: 110px;
+  border-radius: 20px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.banner .introduction__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/*Footer*/
+.footer {
+  background-image: linear-gradient(to top, skyblue, gray);
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  font-size: 2em;
+}
+.footer .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.footer .logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+.footer .footer-text {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__location iframe {
+  width: 600px;
+  height: 150px;
+}
+.footer .footer-networks ul {
+  list-style: none;
+}
+.footer .footer-networks__list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.9em;
+  padding-left: 0;
+}
+.footer .footer-networks__list .network img {
+  width: 40px;
+}
+.footer .footer-networks__list .network img:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+
+/*Main-index*/
+.main {
+  background-image: linear-gradient(to left, skyblue, blueviolet);
+  color: black;
+  padding-bottom: 25px;
+}
+.main__title, .main__text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+  width: 80%;
+  padding: 20px 0;
+}
+.main .experience-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.main .experience-card--reverse {
+  flex-direction: row-reverse;
+}
+.main .experience-card__img {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 10px 10px 20px;
+}
+.main .experience-card__text {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*Main-adoptar*/
+.main__adoption {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.lema {
+  background-image: linear-gradient(to right, orange, blue, red);
+  font-size: 35px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.pets-cards__adoption {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+.pet-card {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgb(56, 55, 55);
+  box-shadow: 10px 10px 20px;
+}
+.pet-card, .pet-card__img {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.pet-card__img {
+  height: 225px;
+}
+.pet-card .card-information {
+  padding: 15px;
+}
+.pet-card .card-information__name {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: blue;
+}
+.pet-card .card-information__description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pet-card .pet-card__button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: blue;
+  font-weight: bold;
+  background-color: blue;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+.pet-card .pet-card__button:hover {
+  background-color: rgb(6, 6, 110);
+  transition: 0.5s;
+  color: white;
+}
+
+.filter {
+  background-image: linear-gradient(to top, white, skyblue);
+  display: block;
+  border-radius: 20px;
+  width: 200px;
+  height: 400px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 10px 20px 20px;
+  margin-right: 60px;
+}
+.filter__title {
+  display: flex;
+  justify-content: center;
+  color: blueviolet;
+  font-weight: bolder;
+}
+.filter__data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.filter-form__text {
+  color: blue;
+}
+
+/*main-donar*/
+.donate-form__data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+}
+.donate-form__data__item {
+  padding: 0 150px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.input-donation {
+  background-color: transparent;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.button__text {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: black;
+  border-radius: 5px;
+}
+.button__text:hover {
+  background-color: black;
+  color: skyblue;
+  transition: 0.5s;
+}
+
+/*Main - mascotas perdidas*/
+.lost-pets-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 30px 0;
+}
+
+/* main - contacto*/
+.contact-form {
+  margin: auto;
+  background-color: transparent;
+  width: 700px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+
+.input-contact {
+  background-image: linear-gradient(to right, blueviolet, rgb(56, 56, 56));
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+/*Vesion Mobile*/
+/*Header*/
+@media only screen and (max-width: 576px) {
+  .banner {
+    background-image: url(../img/fondo-mobile.jpg);
+    width: 100%;
+    height: auto;
+  }
+  .banner .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .introduction {
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 10px;
+  }
+  /*Footer Mobile*/
+  .footer {
+    display: block;
+    justify-content: flex-end;
+    padding: 15px 0;
+    font-size: large;
+  }
+  .footer .logo {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+  }
+  .footer .footer__location iframe {
+    padding: 1em;
+    width: 100%;
+    height: auto;
+  }
+  /*Main-index*/
+  .main__title, .main__text {
+    font-size: 20px;
+    width: 100%;
+  }
+  .main__text {
+    padding: 25px;
+  }
+  .main .experience-card {
+    padding: 10px 50px;
+    display: block;
+  }
+  .main .experience-card__img {
+    width: 100%;
+  }
+  .main .experience-card__text {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  /*Main adoptar*/
+  .lema {
+    font-size: 20px;
+    border-radius: 0px;
+  }
+  .main__adoption {
+    width: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .pets-cards__adoption {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding: 30px;
+  }
+  .pet-card,
+.pet-card__img {
+    width: 100%;
+  }
+  .section-filter {
+    padding: 30px;
+  }
+  .filter-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0;
+  }
+  .filter__data {
+    display: block;
+    padding: 15px;
+  }
+  /*Main-donar*/
+  .donate-form__data {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .donate-form__data__item {
+    padding: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  /*Main-mascotas perdidas*/
+  .lost-pets-cards {
+    padding: 30px;
+  }
+  /*Main-contacto*/
+  .contact-form {
+    margin: auto;
+    background-color: transparent;
+    width: 350px;
+    padding: 0;
+    border-radius: none;
+    box-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+/*Footer*/
+.footer {
+    background-image: linear-gradient(to top, skyblue, gray);
+    @include display-flex(flex, space-evenly);
+    padding-top: 25px;
+    font-size: 2em;
+    .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        &:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s;
+          }
+      }
+    .footer-text {
+        @include display-flex(flex, center);
+      }
+      .footer__location iframe {
+        width: 600px;
+        height: 150px;
+      }  
+      .footer-networks ul {
+        list-style: none;
+      }
+      .footer-networks__list {
+        @include display-flex (flex , space-around);
+        margin-top: 1.9em;
+        padding-left: 0;
+        .network img {
+            width: 40px;
+            &:hover {
+                transform: scale(1.5);
+                transition: transform 0.5s;
+              }
+          }
+      }
+  }
+  
+  

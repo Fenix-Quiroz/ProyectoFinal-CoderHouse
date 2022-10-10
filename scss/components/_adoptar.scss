@@ -1,0 +1,90 @@
+/*Main-adoptar*/
+.main__adoption {
+  @include display-flex(flex, space-evenly);
+  padding-top: 30px;
+}
+.lema {
+  background-image: linear-gradient(to right, orange, blue, red);
+  font-size: nth($font-size , 5 );
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.pets-cards__adoption {
+  width: 100%;
+  @include display-flex(flex, start);
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+.pet-card {
+  border-radius: 10px;
+  background-color: nth($colores, 3);
+  border: 1px solid rgb(56, 55, 55);
+  box-shadow: 10px 10px 20px;
+  &,
+  &__img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &__img {
+    height: 225px;
+  }
+  .card-information {
+    padding: 15px;
+    &__name {
+      text-align: center;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: nth($font-size, 3);
+      color: nth($colores, 2);
+    }
+    &__description {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .pet-card__button {
+    @include display-flex(flex, center);
+    text-decoration: none;
+    color: nth($colores, 3);
+    font-size: nth($colores, 2);
+    font-weight: bold;
+    background-color: $bg-color__card-btn;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 1em;
+    &:hover {
+      background-color: rgb(6, 6, 110);
+      transition: 0.5s;
+      color: nth($colores, 3);
+    }
+  }
+}
+
+.filter {
+  background-image: linear-gradient(to top, white, skyblue);
+  display: block;
+  border-radius: 20px;
+  width: 200px;
+  height: 400px;
+  font-size: nth($font-size, 3);
+  font-weight: bold;
+  box-shadow: 10px 20px 20px;
+  margin-right: 60px;
+
+  &__title {
+    @include display-flex(flex, center);
+    color: nth($colores, 4);
+    font-weight: bolder;
+  }
+  &__data {
+    @include display-flex(flex, center);
+    align-items: center;
+    padding-bottom: 8px;
+  }
+}
+.filter-form__text {
+  color: nth($colores, 2);
+}

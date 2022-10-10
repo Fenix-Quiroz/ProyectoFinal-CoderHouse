@@ -1,0 +1,17 @@
+/* main - contacto*/
+.contact-form {
+    margin: auto;
+    background-color: transparent;
+    width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+  }
+  .input-contact {
+    background-image: linear-gradient(to right, blueviolet, rgb(56, 56, 56));
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: nth($font-size , 3 );
+  }
