@@ -1,7 +1,8 @@
 /*Header*/
 .banner {
-    background-image: url(../img/fondo2.jpg);
-    height: 400px;
+    background-image: url(../img/fondo16.jpg);
+    //background-color: #6FEDD6;
+    height: 470px;
     .logo {
         width: 80px;
         height: 80px;
@@ -11,7 +12,9 @@
             transition: transform 0.3s;
           }
         }
-
+        /*.container-fluid{
+          background-color: black;
+        }*/
         .navbar-toggler {
           background-color: gray;
         }
@@ -20,19 +23,23 @@
           font-weight: 40px;
         }
         .navbar-nav {
-          background-color: rgba(255, 255, 255, 0.5);
+          //background-color: rgba(255, 255, 255, 0.5);
+          //background-color: rgba(248,196,95,255);
+          background-color: black;
           padding: 0 15px;
           border-radius: 12px;
         }
         .nav-link{
-          color: black;
+          color: gray;;
           font-size: 1.5rem;
-          font-weight: bold;
+          font-weight: 700;
           margin: 0 0.2em;
           &:hover{
-            color: blueviolet;
-            transition: 1s;
-            text-decoration: underline;
+            //background-color: #a8aa92;
+            background-color: #dd9e40;
+            transition: .8s;
+            color: black;
+          
           }
         }
     .introduction,
@@ -48,10 +55,11 @@
         padding: 10px 10px;
         margin-left: 110px;
         border-radius: 20px;
-        color: nth($colores, 1 );
+        color: nth(colores, 1 );
         font-size: nth($font_size , 2);
-        font-weight: bold;
+        font-weight: 800;
         &__title {
+            color: #dd9e40;
             text-align: center;
             font-weight: bold;
             font-size: 2em;

@@ -1,6 +1,7 @@
 /*Footer*/
 .footer {
-    background-image: linear-gradient(to top, skyblue, gray);
+    //background-image: linear-gradient(to top, skyblue, gray);
+    background-color: #aaac94;
     @include display-flex(flex, space-evenly);
     padding-top: 25px;
     font-size: 2em;

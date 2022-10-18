@@ -42,6 +42,7 @@
     }
     &__text {
       padding: 25px;
+      font-weight: 700;
     }
 
     .experience-card {
@@ -49,6 +50,12 @@
       display: block;
       &__img {
         width: 100%;
+      }
+      &__flecha{
+        display: none;
+        &--reverse{
+          display: none;
+        }
       }
 
       &__text {

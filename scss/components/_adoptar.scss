@@ -2,6 +2,7 @@
 .main__adoption {
   @include display-flex(flex, space-evenly);
   padding-top: 30px;
+  color: black;
 }
 .lema {
   background-image: linear-gradient(to right, orange, blue, red);
@@ -18,9 +19,9 @@
 }
 .pet-card {
   border-radius: 10px;
-  background-color: nth($colores, 3);
+  background-color: $color-secundary;
   border: 1px solid rgb(56, 55, 55);
-  box-shadow: 10px 10px 20px;
+  box-shadow: 10px 10px 20px $color-primary;
   &,
   &__img {
     width: 300px;
@@ -37,26 +38,27 @@
       padding-bottom: 20px;
       font-weight: bold;
       font-size: nth($font-size, 3);
-      color: nth($colores, 2);
+      color: $color-primary;
     }
     &__description {
       text-align: center;
-      font-weight: bold;
+      font-weight: 800;
       font-size: 18px;
     }
   }
   .pet-card__button {
     @include display-flex(flex, center);
     text-decoration: none;
-    color: nth($colores, 3);
+    color: $color-primary;
     font-size: nth($colores, 2);
     font-weight: bold;
-    background-color: $bg-color__card-btn;
+    background-color: $color-secundary;
     padding: 15px 25px;
+    border: 2px solid black;
     border-radius: 10px;
     margin-top: 1em;
     &:hover {
-      background-color: rgb(6, 6, 110);
+      background-color: #dd9e40;
       transition: 0.5s;
       color: nth($colores, 3);
     }
@@ -64,14 +66,16 @@
 }
 
 .filter {
-  background-image: linear-gradient(to top, white, skyblue);
+  //background-image: linear-gradient(to top, white, skyblue);
+  position: sticky;
+  top: 50px;
   display: block;
   border-radius: 20px;
   width: 200px;
   height: 400px;
   font-size: nth($font-size, 3);
   font-weight: bold;
-  box-shadow: 10px 20px 20px;
+  box-shadow: 10px 20px 20px $color-primary;
   margin-right: 60px;
 
   &__title {

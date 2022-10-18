@@ -1,13 +1,18 @@
 /*Main-index*/
+.root{
+  background-color: black;
+}
 .main {
-  background-image: linear-gradient(to left, skyblue, blueviolet);
-  color: nth($colores, 1);
+  //background-image: linear-gradient(to top, #06283D, #256D85);
+  background-color:  gray;
+  color: black;
   padding-bottom: 25px;
+  margin: 0 30px;
   &__title,
   &__text {
     text-align: center;
     font-size: nth($font-size, 4);
-    font-weight: bold;
+    font-weight: 700;
     margin: auto;
     width: 80%;
     padding: 20px 0;
@@ -23,14 +28,25 @@
         border-bottom-right-radius: 20px;
         width: 250px;
         height: 250px;
-        box-shadow: 10px 10px 20px;
+        box-shadow: 10px 10px 20px $color-primary;
+      }
+      &__flecha{
+        width: 200px;
+        height: 200px;
+        &--reverse{
+          width: 200px;
+          height: 200px;
+          transform: rotate(180deg);
+    
+        }
       }
       &__text {
         display: flex;
         align-items: center;
         width: 300px;
         font-size: nth($font-size, 3);
-        font-weight: bold;
+        font-weight: 800;
+        color: $color-primary;
       }
   }
 }
