@@ -1,72 +1,78 @@
 /*Header*/
 .banner {
-    background-image: url(../img/fondo16.jpg);
-    //background-color: #6FEDD6;
-    height: 470px;
-    .logo {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        &:hover {
-            transform: scale(1.2);
-            transition: transform 0.3s;
-          }
-        }
-        /*.container-fluid{
-          background-color: black;
-        }*/
-        .navbar-toggler {
-          background-color: gray;
-        }
-        .navbar-collapse {
-          justify-content: end;
-          font-weight: 40px;
-        }
-        .navbar-nav {
-          //background-color: rgba(255, 255, 255, 0.5);
-          //background-color: rgba(248,196,95,255);
-          background-color: black;
-          padding: 0 15px;
-          border-radius: 12px;
-        }
-        .nav-link{
-          color: gray;;
-          font-size: 1.5rem;
-          font-weight: 700;
-          margin: 0 0.2em;
-          &:hover{
-            //background-color: #a8aa92;
-            background-color: #dd9e40;
-            transition: .8s;
-            color: black;
-          
-          }
-        }
-    .introduction,
-      h1,
-      p {
-        padding: 10px;
-        margin: 0;
-        line-height: 1.3;
-      }
-    .introduction {
-        background-color: $bg-color__introduction;
-        width: 500px;
-        padding: 10px 10px;
-        margin-left: 110px;
-        border-radius: 20px;
-        color: nth(colores, 1 );
-        font-size: nth($font_size , 2);
-        font-weight: 800;
-        &__title {
-            color: #dd9e40;
-            text-align: center;
-            font-weight: bold;
-            font-size: 2em;
-          }
-      }
-      
-      
+  background-image: url(../img/fondo3.png);
+  height: 600px;
+}
+  .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s;
+    }
   }
-  
-  
+  .container-fluid {
+    background-color: $bg-nav-inputs;
+    margin: 0px 55px;
+    border-radius: 25px;
+    padding: 3px 0;
+    padding: 0 30px;
+  }
+  .navbar-toggler {
+    background-color: $color-primary;
+  }
+  .navbar-collapse {
+    justify-content: end;
+    font-weight: 40px;
+  }
+  .nav-item{
+    padding: 5px 0;
+  }
+  .nav-item.active{
+    text-decoration: line-through;
+  }
+  .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0.2em;
+    &:hover {
+      background-color: #AD8B78;
+      transition: 0.8s;
+    }
+  }
+  .container {
+    @include display-flex(flex,space-between);
+    align-items: center;
+    .introduction {
+      width: 400px;
+      border: 3px solid $color-bordes;
+      margin-top: 60px;
+      padding: 10px 10px;
+      border-radius: 10px;
+      font-size: $font-texto;
+      font-weight: bold;
+      color: $color-text;
+      &__title {
+        color: $color-text;
+        text-align: center;
+        font-weight: 800;
+        font-size: $font-titulos;
+      }
+    }
+    .networks{
+      &__list{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        list-style: none;
+        padding-top: 60px;
+      }
+      .network img{
+        width: 40px;
+        
+      }
+    }
+  }
+

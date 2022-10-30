@@ -1,41 +1,45 @@
 /*Footer*/
-.footer {
-    //background-image: linear-gradient(to top, skyblue, gray);
-    background-color: #aaac94;
-    @include display-flex(flex, space-evenly);
-    padding-top: 25px;
-    font-size: 2em;
-    .logo {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        &:hover {
-            transform: scale(1.2);
-            transition: transform 0.3s;
-          }
+.footer{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+    &__title {
+      text-align: center;
+      color: $color-text;
+      font-size: $font-titulos;
+      padding-bottom: 30px;
+      font-weight: 700;
       }
-    .footer-text {
-        @include display-flex(flex, center);
+      &__banner{
+        background-color: $color-primary;
+        @include display-flex(flex,space-around);
+        align-items: center;
+        margin: auto;
+        border-radius: 10px;
       }
-      .footer__location iframe {
-        width: 600px;
-        height: 150px;
-      }  
-      .footer-networks ul {
-        list-style: none;
+      &__location{
+        margin: 20px;
+
+        iframe{
+          height: 200px;
+          border-radius: 10px;
+        }
       }
-      .footer-networks__list {
-        @include display-flex (flex , space-around);
-        margin-top: 1.9em;
-        padding-left: 0;
-        .network img {
-            width: 40px;
-            &:hover {
-                transform: scale(1.5);
-                transition: transform 0.5s;
-              }
-          }
+      &__networks{ 
+        padding-right: 60px;
+        &-list{
+          margin: auto;
+          list-style: none;
+          @include display-flex(flex, center);
+          flex-direction: column;
+          gap: 20px;
+        }  
       }
+      .network img{
+        width: 40px;
+        
+      }
+  
   }
   
   

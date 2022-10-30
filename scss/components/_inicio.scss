@@ -1,53 +1,85 @@
 /*Main-index*/
-.root{
-  background-color: black;
+.root {
+  background-color: $bg;
 }
-.main {
-  //background-image: linear-gradient(to top, #06283D, #256D85);
-  background-color:  gray;
-  color: black;
+.main-index {
+  color: $color-text;
   padding-bottom: 25px;
-  margin: 0 30px;
+  border-top: 2px solid $color-bordes;
+  border-bottom: 2px solid $color-bordes;
+  width: 90%;
+  margin: 40px auto;
+  &__carousel{
+    background-color: $color-primary;
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 2px solid $color-bordes;
+  }
+  .carousel-title{
+    text-align: center;
+    padding: 30px 0;
+    font-size: $font-subtitulos;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .carousel-indicators{
+    button{
+      background-color: #3E2723;
+    }
+  }
+  .carousel-control-prev-icon{
+    background-image: url(../img/prev.svg);
+    width: 50px;
+    height: 50px;
+  }
+  .carousel-control-next-icon{
+    background-image: url(../img/next.svg);
+    width: 50px;
+    height: 50px;
+  }
   &__title,
   &__text {
     text-align: center;
-    font-size: nth($font-size, 4);
+    font-size: $font-subtitulos;
     font-weight: 700;
-    margin: auto;
-    width: 80%;
-    padding: 20px 0;
+    padding: 40px 0;
+    margin-top: 20px;
+    text-transform: uppercase 
   }
-  .experience-card {
+  .experiences {
     @include display-flex(flex, space-evenly);
-    padding: 30px 0;
-    &--reverse {
-        flex-direction: row-reverse;
-      }
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+    .experience-card {
+      @include display-flex(flex, space-evenly);
+      align-items: center;
+      gap: 30px;
+      padding: 30px 20px;
+      width: 560px;
+      height: auto;
+      border: 2px solid $color-bordes;
+      background-color: $color-primary;
+      margin-bottom: 20px;
+      border-radius: 10px;
       &__img {
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 250px;
-        height: 250px;
-        box-shadow: 10px 10px 20px $color-primary;
-      }
-      &__flecha{
         width: 200px;
         height: 200px;
-        &--reverse{
-          width: 200px;
-          height: 200px;
-          transform: rotate(180deg);
-    
-        }
+        border-radius: 50%;
+      }
+      &__title {
+        font-size: $font-titulos;
+        font-weight: 700;
+        padding-bottom: 20px;
       }
       &__text {
-        display: flex;
-        align-items: center;
         width: 300px;
-        font-size: nth($font-size, 3);
-        font-weight: 800;
-        color: $color-primary;
+        font-size: $font-texto;
+        font-weight: 400;
+        color: $color-text;
       }
+    }
   }
+ 
 }
-

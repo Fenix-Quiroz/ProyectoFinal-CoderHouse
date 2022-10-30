@@ -1,4 +1,31 @@
-@mixin display-flex($display , $justify-content) {
-    display:  $display;
-    justify-content: $justify-content;
+@mixin display-flex($display, $justify-content) {
+  display: $display;
+  justify-content: $justify-content;
+}
+@mixin main-text {
+  text-align: center;
+  padding: 40px 0;
+  font-size: $font-subtitulos;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-text;
+}
+@mixin btn-forms {
+  display: block;
+  margin: auto;
+  padding: 10px 100px;
+  background-color: $bg-btn;
+  border-radius: 10px;
+  border: none;
+  color: $color-text;
+  font-size: $font-texto;
+  font-weight: 700;
+  color: white;
+}
+@mixin btns-hover {
+  background-color: transparent;
+  box-shadow: 0 0 10px 0 #3e2723 inset, 0 0 10px 4px #3e2723;
+  color: $color-text;
+  transition: 0.8s;
+  transform: scale 1.3;
 }

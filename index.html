@@ -13,14 +13,11 @@
       property="og:title"
       content="Adopt Me | Adopta un mejor amigo para tu hogar"
     />
+    <meta property="og:url" content="https://adoptarayudar.000webhostapp.com" />
     <meta
-    property="og:url"
-    content="https://adoptarayudar.000webhostapp.com"
-  />
-  <meta
-    property="image"
-    content="https://adoptarayudar.000webhostapp.com/img/logo.jpg"
-  />
+      property="image"
+      content="https://adoptarayudar.000webhostapp.com/img/logo.jpg"
+    />
     <meta
       name="keywords"
       content="Adopción , adoptar, mascotas, perros , gatos , animales , mascotas perdidas, mejor amigo , caninos, felinos, familia, hogar, cachorros"
@@ -61,7 +58,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link" aria-current="page" href="index.html"
                       >Inicio</a
                     >
@@ -85,120 +82,206 @@
             </div>
           </nav>
         </header>
-        <div class="introduction">
-          <h1 class="introduction__title">ADOPT ME</h1>
-          <p>
-            Somos una organización sin fines de lucro , nuestra meta es brindar
-            ayuda y darles hogar a los animales de la calle. En esta página
-            podrás adoptar a tu nueva mascota y también podrás ayudar a
-            encontrar alguna mascota que lamentablemente se haya perdido.
-          </p>
+        <div class="container">
+          <div class="introduction">
+            <h1 class="introduction__title">ADOPT ME</h1>
+            <p>
+              Somos una organización sin fines de lucro , nuestra meta es
+              brindar ayuda y darles hogar a los animales de la calle. En esta
+              página podrás adoptar a tu nueva mascota y también podrás ayudar a
+              encontrar alguna mascota que lamentablemente se haya perdido.
+            </p>
+          </div>
+          <div class="networks">
+            <ul class="networks__list">
+              <li>
+                <a
+                  class="network"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><img src="img/instagram.png" alt="Red social Instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="network"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  ><img src="img/facebook.png" alt=" Red social Facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="network"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  ><img src="img/twitter.png" alt="Red social Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <main class="main">
-        <h3 class="main__title">
-          Experiencias de personas que <br />
-          adoptaron por primera vez.
+      <main class="main-index">
+        <div class="main-index__carousel">
+          <h2 class="carousel-title">Estás son algunas mascotas que puedes adoptar en nuestra página</h2>
+        <div id="carouselExampleIndicators" class="carousel slide"  style="width: 100%; margin: auto;" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner" style="height: 500px;" >
+            <div class="carousel-item active" style="height: 500px;">
+              <img src="img/boby.jpg" class="d-block w-100" alt="Imagen de un gato.">
+            </div>
+            <div class="carousel-item" style="height: 500px;">
+              <img src="img/garfield.jpg" class="d-block w-100" alt="Imagen de una gato.">
+            </div>
+            <div class="carousel-item" style="height: 500px;">
+              <img src="img/toby.jpg" class="d-block w-100" alt="Imagen de un perro.">
+            </div>
+            <div class="carousel-item" style="height: 500px;">
+              <img src="img/boky.jpg" class="d-block w-100" alt="Imagen de perro.">
+            </div>
+            <div class="carousel-item" style="height: 500px;">
+              <img src="img/pelusa.jpg" class="d-block w-100" alt="Imagen de un perro.">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"  >
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #AD8B73;"></span>
+            <span class="visually-hidden" style="color: #AD8B73;">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        
+        <h3 class="main-index__title">
+          Experiencias de personas que adoptaron por primera vez.
         </h3>
-        <article class="experience-card">
-          <img
-            class="experience-card__img"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            src="img/experiencia1.jpg"
-            alt="Un perro con su dueño."
-          />
-          <div class="experience-card__flecha">
-            <img src="img/flecha.png" alt="Flecha">
-          </div>
-          <p class="experience-card__text">
-            El haber adoptado a Braco fue muy bonito es un perro muy inteligente
-            y divertido , me alegra mucho haberlo adoptado aquel dia.
-          </p>
-        </article>
-        <article class="experience-card experience-card--reverse">
-          <img
-            class="experience-card__img"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            src="img/experiencia2.jpg"
-            alt="Un perro con su dueño."
-          />
-          <div class="experience-card__flecha--reverse">
-            <img class="" src="img/flecha.png" alt="Flecha">
-          </div>
-          <p class="experience-card__text">
-            Adoptamos a Bernardo ya que a mi hijo le gusto mucho , se encariño
-            rápido con el y en la casa están todo el dia jugando , son
-            inseparables.
-          </p>
-        </article>
-        <article class="experience-card">
-          <img
-            class="experience-card__img"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            src="img/experiencia3.jpg"
-            alt="Un perro con su dueño."
-          />
-          <div class="experience-card__flecha">
-            <img class="" src="img/flecha.png" alt="Flecha">
-          </div>
-          <p class="experience-card__text">
-            Mi pareja y yo sentíamos que nos hacia falta una mascota y decidimos
-            adoptar , quedamos fascinados con Layca asi que la adoptamos y ahora
-            es como una hija para nosotros.
-          </p>
-        </article>
+        <div class="experiences">
+          <article class="experience-card">
+            <img
+              class="experience-card__img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              src="img/experiencia1.jpg"
+              alt="Un perro con su dueño."
+            />
+            <div class="experience-card__details">
+              <p class="experience-card__title">Luis Díaz</p>
+              <p class="experience-card__text">
+                El haber adoptado a Braco fue muy bonito es un perro muy
+                inteligente y divertido , me alegra mucho haberlo adoptado aquel
+                dia.
+              </p>
+            </div>
+          </article>
+          <article class="experience-card experience-card--reverse">
+            <img
+              class="experience-card__img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              src="img/experiencia2.jpg"
+              alt="Un perro con su dueño."
+            />
+            <div class="experience-card__details">
+              <p class="experience-card__title">Jorge Lopéz</p>
+              <p class="experience-card__text">
+                Adoptamos a Bernardo ya que a mi hijo le gusto mucho , se
+                encariño rápido con el y en la casa están todo el dia jugando ,
+                son inseparables.
+              </p>
+            </div>
+          </article>
+          <article class="experience-card">
+            <img
+              class="experience-card__img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              src="img/experiencia3.jpg"
+              alt="Un perro con su dueño."
+            />
+            <div class="experience-card__details">
+              <p class="experience-card__title">María Jose</p>
+              <p class="experience-card__text">
+                Mi pareja y yo sentíamos que nos hacia falta una mascota y
+                decidimos adoptar , quedamos fascinados con Layca asi que la
+                adoptamos y ahora es como una hija para nosotros.
+              </p>
+            </div>
+          </article>
+          <article class="experience-card">
+            <img
+              class="experience-card__img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              src="img/experiencia4.jpg"
+              alt="Un perro con su dueño."
+            />
+            <div class="experience-card__details">
+              <p class="experience-card__title">Kevin Ruíz</p>
+              <p class="experience-card__text">
+                Adopte a Layca porque me gusta mucho , es muy divertida y
+                cariñosa , la llevo conmigo cuando voy de viaje por el trabajo,
+                ella es como una motivación para mi, me encanta.
+              </p>
+            </div>
+          </article>
+        </div>
       </main>
       <footer class="footer">
-        <div>
-          <a href="index.html"
-            ><img class="logo" src="img/logo.jpg" alt="Logo de la página."
-          /></a>
-        </div>
-        <div class="footer__location">
-          <p class="footer-text">Ubicanos en:</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31206.90996320073!2d-77.04629307031205!3d-12.121473891679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8199ea33425%3A0xbfe3626e9c3a156a!2sMiraflores!5e0!3m2!1ses-419!2spe!4v1661733252771!5m2!1ses-419!2spe"
-            title="Ubicación de nuestra direccion para poder adoptar"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="footer-networks">
-          <p class="footer-text">Nuestras Redes:</p>
-          <ul class="footer-networks__list">
-            <li>
-              <a
-                class="network"
-                href="https://www.instagram.com/"
-                target="_blank"
-                ><img src="img/instagram.png" alt="Red social Instagram"
-              /></a>
-            </li>
-            <li>
-              <a
-                class="network"
-                href="https://www.facebook.com/"
-                target="_blank"
-                ><img src="img/facebook.png" alt=" Red social Facebook"
-              /></a>
-            </li>
-            <li>
-              <a class="network" href="https://www.twitter.com/" target="_blank"
-                ><img src="img/twitter.png" alt="Red social Twitter"
-              /></a>
-            </li>
-          </ul>
+        <p class="footer__title">Ubicanos en:</p>
+        <div class="footer__banner">
+          <div class="footer__location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31206.90996320073!2d-77.04629307031205!3d-12.121473891679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8199ea33425%3A0xbfe3626e9c3a156a!2sMiraflores!5e0!3m2!1ses-419!2spe!4v1661733252771!5m2!1ses-419!2spe"
+              title="Ubicación de nuestra direccion para poder adoptar"
+              width="1000"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="footer__networks">
+            <ul class="footer__networks-list">
+              <li>
+                <a
+                  class="network"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><img src="img/instagram.png" alt="Red social Instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="network"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  ><img src="img/facebook.png" alt=" Red social Facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="network"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  ><img src="img/twitter.png" alt="Red social Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

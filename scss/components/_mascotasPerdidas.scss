@@ -1,8 +1,12 @@
 /*Main - mascotas perdidas*/
+.main-mascotasPerdidas{
+  color: $color-text;
+  &__text{
+    @include main-text;
+  }
+}
 .lost-pets-cards {
-    width: 100%;
     @include display-flex( flex , center);
     flex-wrap: wrap;
-    gap: 25px;
-    padding: 30px 0;
+    gap: 5px;
   }
