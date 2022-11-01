@@ -1,45 +1,41 @@
 /*Footer*/
-.footer{
+.footer {
   width: 90%;
   margin: auto;
   margin-bottom: 30px;
-    &__title {
-      text-align: center;
-      color: $color-text;
-      font-size: $font-titulos;
-      padding-bottom: 30px;
-      font-weight: 700;
-      }
-      &__banner{
-        background-color: $color-primary;
-        @include display-flex(flex,space-around);
-        align-items: center;
-        margin: auto;
-        border-radius: 10px;
-      }
-      &__location{
-        margin: 20px;
-
-        iframe{
-          height: 200px;
-          border-radius: 10px;
-        }
-      }
-      &__networks{ 
-        padding-right: 60px;
-        &-list{
-          margin: auto;
-          list-style: none;
-          @include display-flex(flex, center);
-          flex-direction: column;
-          gap: 20px;
-        }  
-      }
-      .network img{
-        width: 40px;
-        
-      }
-  
+  &__title {
+    text-align: center;
+    color: $color-text;
+    font-size: $font-titulos;
+    padding-bottom: 30px;
+    font-weight: 700;
   }
-  
-  
+  &__banner {
+    background-color: $color-primary;
+    @include display-flex(flex, space-around);
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+  }
+  &__location {
+    margin: 20px;
+
+    iframe {
+      height: 200px;
+      border-radius: 10px;
+    }
+  }
+  &__networks {
+    padding-right: 60px;
+    &-list {
+      margin: auto;
+      list-style: none;
+      @include display-flex(flex, center);
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .network img {
+    width: 40px;
+  }
+}

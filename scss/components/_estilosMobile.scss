@@ -2,9 +2,10 @@
 /*Header*/
 @media only screen and (max-width: 576px) {
   .banner {
-    background-image: url(../img/fondo-mobile.jpg);
+    background-image: url(../img/fondoMobile.jpg);
     width: 100%;
     height: auto;
+    background-size: cover;
   }
   .container-fluid {
     margin: 0 15px;
@@ -32,6 +33,7 @@
       }
     }
     &__networks {
+      padding-right: 0;
       &-list {
         flex-direction: row;
         padding-left: 0;
@@ -51,67 +53,84 @@
         height: 200px;
       }
     }
-  }
-  /*Main adoptar*/
-  .pets-cards{
-    flex-direction: column-reverse;
-    &__adoption{
-      @include display-flex(flex,center);
-     }
-  }
-  .filter-form{
-    input{
-      width: 30px;
-      height: 20px
+    &__carousel {
+      padding: 20px 30px;
+    }
+    .carousel {
+      &-inner {
+        height: 350px;
+      }
+      &-item {
+        height: 350px;
+      }
     }
   }
-  .section-filter{
+  /*Main adoptar*/
+  .pets-cards {
+    flex-direction: column-reverse;
+    &__adoption {
+      @include display-flex(flex, center);
+    }
+  }
+  .filter-form {
+    input {
+      width: 30px;
+      height: 20px;
+    }
+  }
+  .section-filter {
     @include display-flex(flex, center);
   }
   /*Main-donar*/
-  .main-donar{
-    &__description{
-      img{
+  .main-donar {
+    &__description {
+      img {
         width: 100px;
         height: 200px;
       }
     }
-    &__text{
+    &__text {
       font-size: 16px;
     }
   }
-  .donate-form{
+  .donate-form {
     width: 100%;
-    &__img{
+    &__img {
       width: 100%;
     }
   }
-  .form-donar{
-    &__items{
-      select{
+  .form-donar {
+    &__items {
+      select {
         padding: 10px 20px;
       }
     }
-    &__button{
+    &__button {
       margin-top: 30px;
     }
   }
+  /*main-mascotasPerdidas*/
+  .main-mascotasPerdidas {
+    &__text {
+      width: 300px;
+      margin: auto;
+    }
+  }
   /*Main-contacto*/
-  .main-contacto{
-    &__container{
+  .main-contacto {
+    &__container {
       padding: 20px 5px;
       gap: 10px;
     }
-    .contact-form{
+    .contact-form {
       width: 100%;
-      &__data{
+      &__data {
         grid-template-columns: 1fr;
       }
 
-      &--item{
+      &--item {
         grid-column: 1 / span 1;
       }
     }
   }
-  
 }
